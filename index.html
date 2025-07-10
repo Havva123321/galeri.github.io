@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardahan Üniversitesi - Resim Galerisi</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="mb-0">
+                        <i class="fas fa-university me-3"></i>
+                        Ardahan Üniversitesi
+                    </h1>
+                    <p class="mb-0 mt-2">Resim Galerisi</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="logo-container">
+                        <img src="indir.png" alt="Ardahan Üniversitesi Logo" class="university-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active">Kampüs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Etkinlikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Öğrenci Hayatı</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Akademik</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Gallery Filter -->
+        <div class="text-center mb-5">
+            <h2 class="display-5 mb-4">Fotoğraf Galerisi</h2>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary active" data-filter="all">
+                    <i class="fas fa-th me-2"></i>Tümü
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-filter="kampus">
+                    <i class="fas fa-building me-2"></i>Kampüs
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-filter="etkinlik">
+                    <i class="fas fa-calendar me-2"></i>Etkinlikler
+                </button>
+                <button type="button" class="btn btn-outline-primary" data-filter="ogrenci">
+                    <i class="fas fa-users me-2"></i>Öğrenci Hayatı
+                </button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4" id="gallery">
+            <!-- Kampüs Fotoğrafları -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="kampus">
+                <div class="gallery-card">
+                    <img src="anakampusbinasi.jpg" alt="Ana Kampüs Binası" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Ana Kampüs Binası</h5>
+                            <p>Ardahan Üniversitesi merkez kampüs</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Ana Kampüs Binası">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="kampus">
+                <div class="gallery-card">
+                    <img src="merkezkütüphane.jpg" alt="Kütüphane" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Merkez Kütüphane</h5>
+                            <p>Modern kütüphane kompleksi</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Merkez Kütüphane">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="kampus">
+                <div class="gallery-card">
+                    <img src="sporkomplex.jpg" alt="Spor Kompleksi" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Spor Kompleksi</h5>
+                            <p>Kapalı spor salonu ve fitness merkezi</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Spor Kompleksi">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Etkinlik Fotoğrafları -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="etkinlik">
+                <div class="gallery-card">
+                    <img src="mezuniyet.jpg" alt="Mezuniyet Töreni" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Mezuniyet Töreni</h5>
+                            <p>2024 Mezuniyet töreni anları</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Mezuniyet Töreni">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="etkinlik">
+                <div class="gallery-card">
+                    <img src="akademikkonfrars.jpg" alt="Konferans" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Akademik Konferans</h5>
+                            <p>Uluslararası bilimsel konferans</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Akademik Konferans">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="etkinlik">
+                <div class="gallery-card">
+                    <img src="kültürfestival.jpg" alt="Kültür Festivali" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Kültür Festivali</h5>
+                            <p>Bahar festivali etkinlikleri</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Kültür Festivali">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Öğrenci Hayatı Fotoğrafları -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="ogrenci">
+                <div class="gallery-card">
+                    <img src="ogrencikulup.jpg" alt="Öğrenci Kulüpleri" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Öğrenci Kulüpleri</h5>
+                            <p>Kulüp etkinlikleri ve sosyal aktiviteler</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Öğrenci Kulüpleri">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="ogrenci">
+                <div class="gallery-card">
+                    <img src="yurt.jpg" alt="Yurt Yaşamı" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Yurt Yaşamı</h5>
+                            <p>Öğrenci yurtları ve sosyal alanlar</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Yurt Yaşamı">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="ogrenci">
+                <div class="gallery-card">
+                    <img src="kantin.jpg" alt="Kafeterya" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Öğrenci Kafeteryası</h5>
+                            <p>Modern kafeterya ve dinlenme alanları</p>
+                            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="/placeholder.svg?height=600&width=800" 
+                                    data-title="Öğrenci Kafeteryası">
+                                <i class="fas fa-expand me-2"></i>Büyüt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Fotoğraf</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="/placeholder.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Ardahan Üniversitesi</h5>
+                    <p class="mb-0">Çağdaş eğitim, araştırma ve topluma hizmet</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2024 Ardahan Üniversitesi. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

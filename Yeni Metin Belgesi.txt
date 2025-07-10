@@ -1,0 +1,53 @@
+Proje Adı:
+Ardahan Üniversitesi Resim Galeri Web Sitesi
+
+Projenin Amacı:
+Bu projenin temel amacı, Ardahan Üniversitesi'ne ait kampüs, etkinlikler ve öğrenci hayatını yansıtan fotoğrafları kullanıcı dostu, modern ve etkileşimli bir arayüzle sunmaktır. Web sitesi, ziyaretçilere görsel içerikler üzerinden üniversite hakkında genel bir izlenim kazandırmayı ve kampüs yaşamını tanıtmayı hedeflemektedir.
+
+Kullanılan Teknolojiler:
+HTML5: Sayfa yapısını oluşturmak ve semantik olarak düzenli bir içerik sunmak için kullanıldı.
+
+CSS3 + Bootstrap 5: Görsel düzenlemeler, responsive (mobil uyumlu) tasarım ve buton/galeri gibi bileşenler için kullanıldı. Özel stiller için style.css dosyası kullanılmıştır.
+
+JavaScript (Vanilla): Filtreleme sistemi, modal (resim büyütme), geçiş animasyonları, hata yönetimi ve dinamik kullanıcı etkileşimleri için yazılmıştır.
+
+Font Awesome: İkon desteği sağlamak için kullanılmıştır.
+
+Projenin İçeriği ve Özellikleri:
+Galeri Sistemi: Kampüs, Etkinlikler ve Öğrenci Hayatı kategorilerinde gruplandırılmış toplam 9 resimden oluşan filtrelenebilir galeri.
+
+Filtreleme Özelliği: Butonlar aracılığıyla kullanıcılar, yalnızca ilgili kategoriye ait fotoğrafları görüntüleyebilir.
+
+Modal Sistemi: Kullanıcılar "Büyüt" butonuna tıkladığında resim daha büyük boyutta modal pencerede görüntülenir.
+
+Animasyonlar: JavaScript destekli geçiş efektleri ve intersection observer kullanımı ile daha akıcı kullanıcı deneyimi sağlandı.
+
+Responsive Tasarım: Farklı ekran boyutlarında (mobil, tablet, masaüstü) sorunsuz görünüm sağlanmıştır.
+
+Logo ve Görsel Yedekleme: Yüklenemeyen resimler için placeholder mekanizması geliştirilmiştir.
+
+Sisteme Sağladığı Faydalar:
+Üniversitenin dijital tanıtımına katkı sağlar.
+
+Etkinlikler ve kampüs yaşamı hakkında görsel bilgilendirme sunar.
+
+Mobil cihazlar dahil olmak üzere tüm platformlarda kullanılabilir.
+
+Yönetilebilir bir yapıya sahip olduğu için kolayca yeni resimlerle güncellenebilir.
+
+Öğrenilenler ve Katkılar:
+Bu proje ile birlikte:
+
+Web tasarımında responsive (duyarlı) yaklaşımları,
+
+Bootstrap gibi modern CSS framework’lerinin kullanımı,
+
+Dinamik kullanıcı deneyimi için JavaScript DOM manipülasyonu,
+
+Etkileşimli galeri oluşturma yöntemleri (filtreleme, modal açma),
+
+UI/UX tasarımı ve performans odaklı geliştirme konularında bilgi ve deneyim kazanılmıştır.
+
+Sonuç:
+Proje başarılı bir şekilde tamamlanmış ve işlevsel bir galeri sistemi ortaya çıkarılmıştır. Gerçek dünya için uygulanabilir düzeyde modern, şık ve kullanıcı dostu bir web arayüzü tasarlanmıştır.
+
